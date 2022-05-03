@@ -4,7 +4,7 @@ const checkoutBtn = document.querySelector('#checkoutBtn');
 //const connectBtnHeader = document.querySelector('#connectBtnHeader');
 const web3 = window.Web3;
 const ethereum = window.ethereum;
-const pricePerNFT = 0.1;
+const pricePerNFT = 0.4;
 const show_dc = true
 /** input number spinner
  */
@@ -119,7 +119,7 @@ connectBtn.addEventListener('click', async () => {
     checkoutBtn.addEventListener('click', async () => {
       statusp.innerText = 'Minting in progress....'
       // paymentAddress is where funds will be send to
-      const paymentAddress = '0xDfb5f465D326694AcDcDae0Cf31eF5ea3CE1f186'
+      const paymentAddress = '0xAc61f53062302290d4578f1c98932A7AfC586979'
       let totalEth = totalETHSpan.innerText;
       //totalEth = totalEth.toString();
       accounts = await ethereum.request({ method: "eth_requestAccounts" }); //  [Wikipedia](https://en.wikipedia.org/)
