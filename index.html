@@ -311,7 +311,7 @@
 
         if (db.getItem('amount') == null)
         {
-            var amount = 647
+            var amount = 842
             db.setItem("amount", amount)
         } else {
             var amount = parseInt(db.getItem('amount'))
@@ -324,7 +324,7 @@
           if (counter > 40)
           {
             counter = 0
-            if (amount < 600)
+            if (amount < 950)
             {
                 logic = Math.floor((1 - (amount / 599)) * 100)
                 amount = Math.floor(Math.random() * logic) + amount
