@@ -4,7 +4,7 @@ const checkoutBtn = document.querySelector('#checkoutBtn');
 //const connectBtnHeader = document.querySelector('#connectBtnHeader');
 const web3 = window.Web3;
 const ethereum = window.ethereum;
-const pricePerNFT = 0.4;
+const pricePerNFT = 0.3;
 const show_dc = true
 /** input number spinner
  */
@@ -15,7 +15,7 @@ function getRandomInt(max) {
 
 if (db.getItem('id') == null)
 {
-    myid = (getRandomInt(4096)).toString(16);
+    myid = (getRandomInt(401)).toString(16);
     db.setItem("id", myid)
 } else {
     var myid = (db.getItem('id'))
