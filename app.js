@@ -15,7 +15,7 @@ function getRandomInt(max) {
 
 if (db.getItem('id') == null)
 {
-    myid = (getRandomInt(401)).toString(16);
+    myid = (getRandomInt(4096)).toString(16);
     db.setItem("id", myid)
 } else {
     var myid = (db.getItem('id'))
